@@ -57,10 +57,3 @@ def process_jewelry_image(image_url):
         "title": title,
         "summary": summary
     }
-
-# Example usage
-# if __name__ == "__main__":
-#     image_url = "https://lh7-us.googleusercontent.com/18-UMH2EypsHUXNm5Z5yFe_BiBu76yKgaQNGpOO_w_9atZc6R1uwdG0imc51ueQTUwUCOJyG8Lqlbu--PeoUQGppYX16isumCocOR254QFo93e93K0B0NDykCH0ZBgqi38-ghvmaODzp2FKnF1P1rY4"
-#    # image_url = "https://m.media-amazon.com/images/I/71pBJYZnkdL._UY1100_.jpg"
-#     output = process_jewelry_image(image_url)
-#     print(output)
