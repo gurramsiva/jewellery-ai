@@ -1,0 +1,23 @@
+###
+http://localhost:4000/products
+
+
+###
+curl 'http://localhost:4000/products' \
+  -H 'sec-ch-ua-platform: "macOS"' \
+  -H 'authorization;' \
+  -H 'Referer: http://localhost:3000/' \
+  -H 'sec-ch-ua: "Not)A;Brand";v="8", "Chromium";v="138", "Google Chrome";v="138"' \
+  -H 'sec-ch-ua-mobile: ?0' \
+  -H 'request-id: d469690a-1aee-4eb7-bcf2-fac3ccd5f6b5' \
+  -H 'User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/138.0.0.0 Safari/537.36' \
+  -H 'Content-Type: application/json'
+
+
+###
+POST http://localhost:4000/data
+Content-Type: application/json
+
+{
+  "image_url": "https://www.candere.com/media/jewellery/images/C001952__1.jpeg"
+}
