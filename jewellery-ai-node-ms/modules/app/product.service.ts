@@ -1,7 +1,6 @@
 import { Http } from "dff-util";
 import { connectToDatabase, getDatabase } from "../../utils/databse";
 import { Product } from "./product.schema";
-import { error } from "node:console";
 
 export class ProductService {
   static async ProductSchema() {
@@ -33,7 +32,7 @@ export class ProductService {
       const product = await ProductService.saveService(imageAnalysis);
       return product;
     } else {
-      throw error;
+      throw new Error("Image analysis accuracy is too low");
     }
 
     // return imageAnalysis;
