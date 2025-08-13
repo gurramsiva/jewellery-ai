@@ -4,7 +4,6 @@ import { ProductService } from "./product.service";
 import { ResponseType } from "../../utils/app.types";
 // import { Product, CreateProductRequest, ProductSearchRequest } from "../../utils/product.schema";
 
-// Root endpoint
 export const HealthCheckApi = api<{}, { status: string; message: string }>(
   {
     expose: true,
@@ -19,7 +18,6 @@ export const HealthCheckApi = api<{}, { status: string; message: string }>(
   }
 );
 
-// Data endpoints
 export const CreateDataApi = api<{ image_url: string }, ResponseType>(
   {
     expose: true,
@@ -41,7 +39,6 @@ export const CreateDataApi = api<{ image_url: string }, ResponseType>(
   }
 );
 
-// Product endpoints
 export const GetProductsApi = api<{}, ResponseType>(
   {
     expose: true,
@@ -65,7 +62,6 @@ export const GetProductsApi = api<{}, ResponseType>(
   }
 );
 
-// S3 endpoints
 export const GenerateUploadURLApi = api<{ fileName: string }, ResponseType>(
   {
     expose: true,
